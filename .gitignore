@@ -1,0 +1,38 @@
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Laravel dependencies (reproduced via composer install / npm install)
+src/vendor/
+src/node_modules/
+
+# Laravel environment (contains APP_KEY and DB credentials)
+src/.env
+
+# SQLite leftover from fresh install (we use MySQL)
+src/database/database.sqlite
+
+# Generated bootstrap cache
+src/bootstrap/cache/packages.php
+src/bootstrap/cache/services.php
+
+# Compiled Blade views and runtime cache
+src/storage/framework/views/*.php
+src/storage/framework/cache/data/
+src/storage/framework/sessions/
+
+# Logs
+src/storage/logs/*.log
+
+# Vite compiled assets and HMR file
+src/public/build/
+src/public/hot
